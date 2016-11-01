@@ -1,0 +1,15 @@
+<h1>A FORM FOR A NEW USER!!!!</h1>
+<%= form_tag({controller: "users", action: "show"}, method: "get") do %>
+    <%= label_tag(:name, "Name") %>
+    <%= text_field_tag(:name) %>
+    <br>
+    <%= label_tag(:surname, "Surname") %>
+    <%= text_field_tag(:surname) %>
+    <br>
+    <%= label_tag(:age, "Age") %>
+    <%= text_field_tag(:age) %>
+    <br>
+    <%= submit_tag("Ok") %>
+<% end %>
+
+
